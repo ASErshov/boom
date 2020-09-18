@@ -1,0 +1,10 @@
+.body{
+    background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(255,59,0,1) 50%, rgba(255,0,0,1) 100%);
+    min-height: 7rem;
+    max-width: 20rem;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: calc(50% - 10rem);
+    padding: 4rem;
+    outline: none;
+}

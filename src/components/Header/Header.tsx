@@ -6,7 +6,7 @@ import styles from './Header.module.css'
 import { Button } from '@material-ui/core';
 
 export type HeaderProps={
-    children?:string, 
+    children?:string
     icon?(className: string): React.ReactElement
     classNameText?: string
     buttons?: Array<{id: number, onClick():void, text: string}>
@@ -23,7 +23,7 @@ const Header: React.FC<HeaderProps> = ({children, icon, classNameText, buttons})
             <div className={styles.buttons}>
             {buttons?.map(button=>{
                 return (
-                <Button onClick={button.onClick}>{button.text}</Button>
+                <Button className={classNameText} key={button.id} onClick={button.onClick}>{button.text}</Button>
                 )
             })}
             </div>

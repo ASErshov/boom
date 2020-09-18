@@ -1,0 +1,17 @@
+div.form >.submit{
+    background-color: inherit ;
+    color: #FFFFFF ;
+    box-shadow: none;
+    min-width: fit-content;
+}
+div.form  .input{
+    margin-top: 0.5rem;
+}
+div.form  .input fieldset{
+    border-color:  #990000 !important;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
