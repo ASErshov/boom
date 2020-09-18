@@ -1,0 +1,10 @@
+.text{
+    display: table;
+	margin: 0 auto;
+	font-weight: 600;
+	font-size: 5em;
+	background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(253,119,29,1) 52%, rgba(251,252,69,1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	line-height: 200px;
+}
