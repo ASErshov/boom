@@ -1,0 +1,13 @@
+.appBar{
+    width: 100%,
+}
+.toolbar {
+    background: #990000;
+}
+.logo{
+    height: 4rem;
+    margin-right: 2rem;
+}
+.buttons{
+    margin-left: auto;
+}
