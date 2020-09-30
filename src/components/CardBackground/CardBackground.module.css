@@ -1,0 +1,40 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    background: #990000;
+    width: 14.16rem;
+    height: 20.8rem;
+    border: 1px solid #660000;
+    border-radius: 0.7rem;
+    align-items: center;
+}
+.gradient{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    background: radial-gradient(circle, #CC0000 24%, #BB0000 40%, #990000 70%);
+    align-items: flex-end;
+    border-radius: 1rem;
+}
+.icon{
+    height: fit-content;
+    margin-bottom: 1.5rem;
+}
+.card .gradientText{
+	margin: 0 auto;
+	background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(253,119,29,1) 52%, rgba(251,252,69,1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-family: Impact, fantasy;
+    margin-top: -1.5rem;
+}
+.card .text{
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-family: fantasy;
+    color: white;
+    letter-spacing: 0.2rem;
+    margin-top: -0.5rem;
+}
