@@ -1,0 +1,115 @@
+.card, .bomb{
+    width: 13.16rem;
+    height: 19.8rem;
+    border: 1px solid;
+    border-radius: 0.7rem;
+
+    padding: 0.5rem;
+}
+.card{
+    background-color: #eee;
+} 
+.bomb{
+    background-color: black;
+}
+
+.border{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.7rem;
+    border: 0.25rem solid;
+    background: inherit;
+    min-height: calc(100% - 1rem);
+    justify-content: space-around;
+}
+.head{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.icon{
+    height: 1.7rem;
+    padding: 0.1rem;
+}
+.head .nameText{
+    text-transform: uppercase;
+    font-family: fantasy;
+    color: black;
+    letter-spacing: 0rem;
+    padding-left: 0.5rem;
+    margin-top: -0.25rem;
+    font-size: 1rem;
+}
+.head .text{
+    color: #999999;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 0rem;
+    padding-left: 2.3rem;
+    margin-top: -0.7rem;
+    word-wrap: break-word;
+    width: calc(100% - 2.3rem);
+}
+
+.head .bombText{
+	background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(253,119,29,1) 52%, rgba(251,252,69,1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-family: Impact, fantasy;
+    letter-spacing: 0rem;
+    padding-left: 0.5rem;
+    margin-top: -0.25rem;
+    font-size: 1rem;
+}
+.footer .bombText{
+	background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(253,119,29,1) 52%, rgba(251,252,69,1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-family: Impact, fantasy;
+    letter-spacing: 0rem;
+    padding-left: 0.5rem;
+    margin-top: -0.25rem;
+    font-size: 1rem;
+}
+
+.footer .nameText{
+    text-transform: uppercase;
+    font-family: fantasy;
+    color: black;
+    letter-spacing: 0.2rem;
+    letter-spacing: 0rem;
+    font-size: 1rem;
+}
+.image{
+    width: 100%
+}
+.imageWraper{
+    height: 50%;
+    overflow: visible;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transform: rotate(180deg);
+}
+
+.bombImage{
+    position: absolute;
+    top: -0.5rem;
+    right: -0.6rem;
+}
+.bombIcon{
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 0.1rem;
+    border-radius: 100%;
+    background: radial-gradient(circle, #999999 0%, #000000 80%);
+    position: relative;
+}
