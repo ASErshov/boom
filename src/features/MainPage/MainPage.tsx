@@ -9,9 +9,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import {actions} from './ducks'
 import { getHostKey, getConnected, getMessage, getHostMessage } from './ducks/selectors';
 import { Message } from '../../constants/types';
-import { Button } from '@material-ui/core';
 import CardBacground from '../../components/CardBackground';
-
+import CardFront from '../../components/CardFront';
+import { cards } from '../../constants/cards'
 
 export type MainPageProps= {
   connectToPeer(id:string):void
@@ -27,7 +27,6 @@ const logo = (className: string):React.ReactElement =>{
 }
 
 const MainPage: React.FC<MainPageProps>=({connectToPeer, sendMessage, getMyId}): React.ReactElement =>{
-
   const dispatch = useDispatch()
 
   const hostId = useSelector(getHostKey)
@@ -80,11 +79,16 @@ const MainPage: React.FC<MainPageProps>=({connectToPeer, sendMessage, getMyId}):
     setUserOpen(false)
   }, [])
 
+  const handleRegulations = useCallback(() =>{
+    window.location.assign('https://cdn.mosigra.ru/mosigra.product.other/559/112/Exploding%20Kittens_Rules.pdf')
+  }, [])
   return (<>
     <Header 
       icon={logo} 
       classNameText={styles.text} 
-      buttons={[{id:1, onClick:handleUser, text:'Подключиться'},
+      buttons={[
+                {id:3, onClick:handleRegulations, text: 'Правила' },
+                {id:1, onClick:handleUser, text:'Подключиться'},
                 {id:2, onClick:handleHost, text:'Хостинг'}]
               }
       >
@@ -93,6 +97,7 @@ const MainPage: React.FC<MainPageProps>=({connectToPeer, sendMessage, getMyId}):
     {isHost && connected[0]?.name}
     {!isHost && hostMessage?.name}
     <CardBacground/>
+    {cards.map(card=> card.images.map( (item, index) => <CardFront card={card} index={index}/>))}
     <CustomModal open={hostOpen} handleClose={closeModals} text={`Ключ подключения ${hostId}`} classNameText={styles.modalText}/>
     <CustomModal open={userOpen} handleClose={closeModals}>
       <SearchInput

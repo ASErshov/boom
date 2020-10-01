@@ -16,6 +16,7 @@ export type Card = {
   type: CardTypes
   name:string
   icon: any
+  color: string
   images: Array<{
     text?: string
     image: any

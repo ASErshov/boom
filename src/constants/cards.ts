@@ -1,6 +1,6 @@
 import { Card, CardTypes } from './types';
 import attackIcon from '../assets/png/cardIcons/attackIcon.png'
-import beardСatIcon from '../assets/png/cardIcons/beardСatIcon.png'
+import beardCatIcon from '../assets/png/cardIcons/beardCatIcon.png'
 import bombIcon from '../assets/png/cardIcons/bombIcon.png'
 import defuseIcon from '../assets/png/cardIcons/defuseIcon.png'
 import favorIcon from '../assets/png/cardIcons/favorIcon.png'
@@ -72,6 +72,7 @@ export const cards: Card[] = [
         type: CardTypes.STANDART,
         name: 'Атаковать',
         icon: attackIcon,
+        color: '#FF9900',
         images: [
             {
                 text: "Распусти вековые волосы на спине",
@@ -80,6 +81,7 @@ export const cards: Card[] = [
             {
                 text: "Выстрели из крабопульты",
                 image: attack2
+            },
             {
                 text: "Выпусти психокотэ",
                 image: attack3
@@ -94,6 +96,7 @@ export const cards: Card[] = [
         type: CardTypes.STANDART,
         name: 'Нетушки!',
         icon: noIcon,
+        color: '#990000',
         images: [
             {
                 text: "Ниндзя сносит пинком дракона",
@@ -102,6 +105,7 @@ export const cards: Card[] = [
             {
                 text: "Заткни оппонента безвкусным бутером с порцией никакущего соуса",
                 image: no2
+            },
             {
                 text: "Вручи шнобелевскую премию",
                 image: no3
@@ -120,6 +124,7 @@ export const cards: Card[] = [
         type: CardTypes.STANDART,
         name: 'Одолжение',
         icon: favorIcon,
+        color: 'black',
         images: [
             {
                 text: "Просит натереть тебе спинку шампунем для спинных волос",
@@ -128,6 +133,7 @@ export const cards: Card[] = [
             {
                 text: "Тройничок на юрадояхте",
                 image: favor2
+            },
             {
                 text: "Будь рабом на белкопати!",
                 image: favor3
@@ -142,6 +148,7 @@ export const cards: Card[] = [
         type: CardTypes.STANDART,
         name: 'Заглянуть в будущее',
         icon: seeIcon,
+        color: '#FF3399',
         images: [
             {
                 text: "Спроси вангующую козу",
@@ -150,6 +157,7 @@ export const cards: Card[] = [
             {
                 text: "Призови креветкобогомола",
                 image: see2
+            },
             {
                 text: "Проведи секретное проникновение спецкроликами",
                 image: see3
@@ -168,6 +176,7 @@ export const cards: Card[] = [
         type: CardTypes.STANDART,
         name: 'Пропустить',
         icon: skipIcon,
+        color: '#0099FF', 
         images: [
             {
                 text: "Свинти сверкая леопардовой задницей",
@@ -176,6 +185,7 @@ export const cards: Card[] = [
             {
                 text: "Оседлай космическую гиперкозу",
                 image: skip2
+            },
             {
                 text: "Псст! ты - краб под прикрытием",
                 image: skip3
@@ -190,6 +200,7 @@ export const cards: Card[] = [
         type: CardTypes.STANDART,
         name: 'Перемешать',
         icon: mixIcon,
+        color: '#CC9966',
         images: [
             {
                 text: "Приперлась стая пердучих мышей",
@@ -198,6 +209,7 @@ export const cards: Card[] = [
             {
                 text: "Абракраб линкольн избранный президент",
                 image: mix2
+            },
             {
                 text: "Электрошторм помиранских шпицев нагрянул с востока",
                 image: mix3
@@ -212,6 +224,7 @@ export const cards: Card[] = [
         type: CardTypes.BOMB,
         name: 'Взрывной котенок',
         icon: bombIcon,
+        color: 'black',
         images: [
             {
                 image: bomb1
@@ -229,8 +242,9 @@ export const cards: Card[] = [
     },
     {
         type: CardTypes.DEFUSE,
-        name: 'Взрывной котенок',
+        name: 'Обезвредить',
         icon: defuseIcon,
+        color: '#99FF00',
         images: [
             {
                 text: 'Используй лазерную указку',
@@ -261,7 +275,8 @@ export const cards: Card[] = [
     {
         type: CardTypes.CAT,
         name: 'Брадокот',
-        icon: beardСatIcon,
+        icon: beardCatIcon,
+        color: 'black',
         images: [
             {
                 image: beard
@@ -272,6 +287,7 @@ export const cards: Card[] = [
         type: CardTypes.CAT,
         name: 'Такокот',
         icon: tacoCatIcon,
+        color: 'black',
         images: [
             {
                 image: taco
@@ -282,6 +298,7 @@ export const cards: Card[] = [
         type: CardTypes.CAT,
         name: 'Кошка картошка',
         icon: potatoCatIcon,
+        color: 'black',
         images: [
             {
                 image: potato
@@ -292,6 +309,7 @@ export const cards: Card[] = [
         type: CardTypes.CAT,
         name: 'Блюющий радугой кот',
         icon: rainbowCatIcon,
+        color: 'black',
         images: [
             {
                 image: rainbow
@@ -302,6 +320,7 @@ export const cards: Card[] = [
         type: CardTypes.CAT,
         name: 'Арбузный котэ',
         icon: watermelonCatIcon,
+        color: 'black',
         images: [
             {
                 image: watermelon
